@@ -6,13 +6,13 @@
 # group: radical
 # contributor: Gustaf Waldemarson
 # --
-def ${1:name}($2):
-    \"\"\"$3
+def ${1:name}($2) -> $3:
+    \"\"\"$4
     ${2:$(yasnippet-radical-snippets--python-args-to-reST-docstring yas-text t)}
-    ${4:${2:$(yasnippet-radical-snippets--python-types-to-reST-docstring yas-text t)}
-    }${5:.. Returns:
-    :returns: $6
-    ${7::rtype: $8
+    ${5:${2:$(yasnippet-radical-snippets--python-types-to-reST-docstring yas-text t)}
+    }${6:.. Returns:
+    :returns: $7
+    ${8::rtype: ${3:$(yasnippet-radicat-snippets--python-rtype yas-text)}
 }
     }\"\"\"
     ${0:$$(let ((beg yas-snippet-beg)
